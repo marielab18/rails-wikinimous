@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts 'Creating 5 products...'
-5.times do |i|
+10.times do |i|
   article = Article.create!(
     title: Faker::Book.title,
     content: Faker::Quote.matz

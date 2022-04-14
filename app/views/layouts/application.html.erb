@@ -11,6 +11,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar sticky-top navbar-dark bg-primary px-5">
+      <span class="navbar-brand">Wikinimous</span>
+      <%= link_to 'New article', new_article_path, class: "navbar-brand"  %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
