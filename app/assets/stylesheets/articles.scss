@@ -9,6 +9,7 @@ body{
 .navbar-lewagon {
   justify-content: space-between;
   background: #BFBDC1;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -17,4 +18,9 @@ body{
 
 h2{
   color: #3A4E48;
+}
+
+.title{
+  border-bottom: 1px solid #BFBDC1;
+  text-decoration: none!important;
 }
