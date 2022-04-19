@@ -1,9 +1,9 @@
-<div class="form-group row">
+<div class="form-group row mx-5">
   <%= form_for(@article) do |f| %>
-    <%= f.label :title, class: "form-group row" %>
-    <%= f.text_field :title, class: "form-group row" %>
-    <%= f.label :content, class: "form-group row" %>
-    <%= f.text_field :content, class: "form-group row"  %>
-    <%= f.submit %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class:"form-control", placeholder: "Your article name" %>
+    <%= f.label :content %>
+    <%= f.text_area :content, class: "form-control", :rows => "5", placeholder: "Write your thoughts" %>
+    <%= f.submit class:"btn btn-outline-secondary mt-3" %>
   <% end %>
 </div>

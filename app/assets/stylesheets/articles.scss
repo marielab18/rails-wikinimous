@@ -20,7 +20,10 @@ h2{
   color: #3A4E48;
 }
 
-.title{
+.title {
   border-bottom: 1px solid #BFBDC1;
-  text-decoration: none!important;
+}
+
+.linky:hover {
+  opacity: 0.5;
 }

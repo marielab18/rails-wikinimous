@@ -1,10 +1,14 @@
 <div class="title d-flex justify-content-between mb-3">
   <h2><%= @article.title %>  </h2>
-  <div class="d-flex justify-content-end">
-    <h2><%= link_to icon('fa-solid fa-pen-to-square', 'Edit'), edit_article_path(@article) %></h2>
-    <h2><%= link_to icon("fa-solid fa-trash-can", 'Delete'), article_path(@article),
+  <div class="d-flex justify-content-end" >
+    <h2>
+      <%= link_to icon('fa-solid fa-pen-to-square', 'Edit'), edit_article_path(@article), class:"linky", style:"color:#3a4e48" %>
+      <%= link_to icon("fa-solid fa-trash-can", 'Delete'), article_path(@article),
                           method: :delete,
-                          data: { confirm: "Are you sure?"} %></h2>
+                          data: { confirm: "Are you sure?"},
+                          class:"linky",
+                          style:"color:#3a4e48" %>
+    </h2>
   </div>
 
 </div>

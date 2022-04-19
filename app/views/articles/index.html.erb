@@ -1,4 +1,6 @@
 <% @articles.each do |article| %>
-  <h2><%= link_to article.title, article_path(article), class:"mb-3 alert-link" %></h2>
+  <h2><div class="linky" >
+    <%= link_to article.title, article_path(article), class:"mb-3 text-decoration-none", style:"color:#3a4e48" %>
+  </div></h2>
   <p><%= article.content %></p>
 <% end %>
